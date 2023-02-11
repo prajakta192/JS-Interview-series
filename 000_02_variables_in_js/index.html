@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in JS</title>
+</head>
+<body>
+    
+    <script>
+// what are variables in JS?
+//In any programing lang. data is very imp. to perform operations, display info etc. 
+//e.g. if we want to display user's name;
+console.log('Bob'); // will print 'Bob' to the console.
+console.log(21 + 3 * 2 /2) // will print 24 to the console.
+
+//but this is not the ideal way to display data. what if we want to display it multiple times & then change it later.
+console.log('Bob'); //Bob 
+console.log('Bob'); //Bob 
+console.log('Bob'); //Bob 
+console.log('Bob'); //Bob 
+console.log('Bob'); //Bob 
+//suppose Now we want to chagne it to 'john'; will have to change it in all places.
+console.log('Jhon'); //Jhon 
+console.log('Jhon'); //Jhon 
+console.log('Jhon'); //Jhon 
+console.log('Jhon'); //Jhon 
+console.log('Jhon'); //Jhon 
+//this code will not be easy to maintain. better way store your value/data in variables. 
+
+let name = 'Bob';
+console.log(name);// Bob
+console.log(name);// Bob
+console.log(name);// Bob
+
+//want to change 
+name = 'Jhon';
+console.log(name); // Jhon
+
+//so back to the question;
+//variables are like container where we can store data of any type.
+//how it works =>  when we create variable & assign a value to it, computer will allocate memory to that variable & store the variable to that location with it's assigned value. easy to reuse multiple times.
+
+// Rules to create variable (naming convention)
+// 1] variable shoulden't start with number
+
+ //let 2Name = 'Doe';  //syntaxError
+
+ // 2] can only contains numbers(not @start), //letters, underscore, $sign
+ //let first&lastName = 'Ram Lakhan'  // syntaxError Unexpected token '&'
+
+ // 3] JS reserved keywords not allowed => for, if while, do, this, function
+
+ //let for = 'Javascript' //// syntaxError Unexpected token '&'
+
+ //instead use 
+ let _for = 'javascript';
+
+ // 4] avoid variable name with uppercase. as in js this convetion is used for object oriented programming Or for constants.
+
+ let Person = 'Alice';
+ console.log(Person) ;
+
+ // 5] variable name should be descriptive for cleaner code.
+ 
+ let firstName = 'Bob'; //instead of name = 'Bob'
+
+</script>
+</body>
+</html>
