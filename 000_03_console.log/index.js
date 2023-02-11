@@ -1,4 +1,8 @@
 // What is the result of ‘console.log(3<2<1)’ and why?
+//type coercion problem
+
+//1] Coercion happens when operands are of different types. i.e. 99 + '99'
+
 console.log(3<2<1) // true;
 
 //why => 
